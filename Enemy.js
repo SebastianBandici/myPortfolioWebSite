@@ -7,7 +7,7 @@ export default class Enemy {
         this.height = 32
 
         this.image = new Image()
-        this.image.src = "images/enemyLogo1.png"
+        this.image.src = "images/EnemyLogo1.png"
     }
 
     collideWith(sprite){
