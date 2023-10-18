@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SebastianBandici</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b7b6eafde8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo1.png" class="logo"> -->
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-row">
+
+            <div class="header-col-1">
+                <div class="header-text">
+                    <p>Web/Software Developer</p>
+                    <h1>Hi, I'm <span>Sebastian</span><br><span>B</span>andici</h1>
+                </div>
+            </div>
+
+            <div class="header-col-2">
+                <div class="info-lable">
+                    <h3>Press <span>"LeftArrow"</span> and <span>"RightArrow"</span> to move and <span>"F"</span> to fire</h3>
+                </div> 
+                <canvas class="game" id="game"></canvas>
+            </div>
+
+        </div>
+    </div>
+    <!-- ----------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/UserImgPic.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>About</span> Me</h1>
+                    <p id="description">I'm a dedicated web and software developer, passionate about turning innovative concepts into functional, user-centric applications. With a strong foundation in coding, problem-solving, and an insatiable curiosity for emerging technologies, I'm committed to delivering high-quality, scalable solutions that make a difference in the digital realm.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('experience')">Hobbys</p>
+                        <p class="tab-links" onclick="openTab('th-skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="openTab('nth-skills')">Non-Technical Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2021 -Present</span><br>Universitatea din Oradea, Facultatea de Informatica</li>
+                            <li><span>2008-2012</span><br>Universitatea Tehnica din Cluj-Napoca, Facultatea de Constructii Civile</li>
+                            <li><span>2004-2008</span><br>Colegiul National "Simion Barnutiu", Profil Matematica-Informatica Intensiv</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Hiking</span><br>Enjoy the great outdoors and explore nature.</li>
+                            <li><span>Cycling</span><br>Explore your surroundings on a bicycle, from urban streets to scenic trails.</li>
+                            <li><span>Traveling</span><br>Explore new places, cultures and cuisines.</li>
+                            <li><span>Sports</span><br>Engage in activities like tennis, basketball and swimming.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="th-skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, C#, JavaScript, HTML, CSS</li>
+                            <li><span>Web Development</span><br>React, Node.js, Django</li>
+                            <li><span>Database Management</span><br>MySQL, PostgreSQL, MongoDB, SQL server</li>
+                            <li><span>Version Control</span><br>Git, GitHub</li>
+                            <li><span>Testing and Debugging</span><br>JUnit</li>
+                            <li><span>Server Management</span><br>GitHub, Heroku, PythonAnywhere</li>
+                            <li><span>Data Analysis and Visualization</span><br>Pandas, Matplotlib, D3.js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="nth-skills">
+                        <ul>
+                            <li><span>P</span>roblem-Solving<br></li>
+                            <li><span>P</span>roject Management<br></li>
+                            <li><span>T</span>eamwork<br></li>
+                            <li><span>A</span>daptability<br></li>
+                            <li><span>A</span>ttention to Detail<br></li>
+                            <li><span>T</span>ime Management<br></li>
+                            <li><span>C</span>ritical Thinking<br></li>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------servives--------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span> </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>HTML CSS JS</h2>
+                    <p>As a web designer proficient in HTML, CSS, and JavaScript, I transform ideas into visually appealing and functional online experiences, making the digital world come alive.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Django</h2>
+                    <p>I'm a developer specializing in Python and the Django framework for back-end development. I create robust and scalable web applications, harnessing the power of these technologies to bring ideas to life.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-windows"></i>
+                    <h2>C# .NET</h2>
+                    <p>As a web designer specializing in .NET technologies and frameworks, I create robust and user-friendly web applications that leverage the power of Microsoft's ecosystem to deliver cutting-edge digital solutions.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------portfolio--------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My <span>Work</span> </h1>
+            <div class="work-list">
+                
+                <div class="work">
+                    <img src="images/myPreject4.PNG">
+                    <div class="layer">
+                        <h3>This Website <i class="fa-solid fa-face-smile"></i></h3>
+                        <p>Crafted a website using HTML, CSS, and JavaScript, blending design and interactivity for a dynamic online presence.
+                        </p>
+                        <a href="http://127.0.0.1:5500/#contact"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/myProject2.PNG">
+                    <div class="layer">
+                        <h3>My Blog</h3>
+                        <p>Created my blog using Python and Django, combining powerful web development tools to bring my content to life
+                        </p>
+                        <a href="http://sebastianbandici.pythonanywhere.com/"><i class="fa-brands fa-python"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/myProject1.PNG">
+                    <div class="layer">
+                        <h3>Consignment Shop</h3>
+                        <p>Developed a C# application for a consignment shop, enabling users items, add them to a virtual shopping cart, and purchases them. The application includes inventory management and a seamless shopping experience.
+                        </p>
+                        <a href="https://github.com/SebastianBandici/ConsignmentShop"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+    <!-- ----------contact--------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><span>Contact </span>Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>sebastianbandici@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sebastian-bandici-20924b226/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://www.facebook.com/bandici.sebastian.9"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sebastianbandici/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Sebastian-Bandici-CV.pdf" download class="btn btn-download">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-download">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © SebastianBandici 2023 </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    
+    <script type="module" src="game.js"></script>
+    
+</body>
+</html>
